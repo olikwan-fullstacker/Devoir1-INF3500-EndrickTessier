@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="form-section">
+      <h1>Ready to start your success story?</h1>
+      <p class="subtitle">Signup to our website and start leafing
+         through your favorite literature today!</p>
+
+      <form>
+        <div class="field">
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="janedoe@mail.com">
+        </div>
+
+        <div class="field">
+          <label for="interest">Area of interest</label>
+          <select id="interest" name="interest">
+            <option value="romance">Romance</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-fiction</option>
+            <option value="poetry">Poetry</option>
+          </select>
+        </div>
+
+        <div class="checkbox-field">
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+        </div>
+
+        <button type="submit" class="btn-signup">Sign up</button>
+      </form>
+    </section>
+
+    <div class="image-section">
+      <img src="images/Woman-reading-a-book.jpg" alt="Woman reading a book with a cat">
+    </div>
+  </main>
+</body>
+</html>
