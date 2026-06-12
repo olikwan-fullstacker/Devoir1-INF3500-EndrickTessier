@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.form-section,
+.image-section {
+  flex: 1;
+  padding: 60px;
+}
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+.field input,
+.field select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  font-size: 1rem;
+  background: transparent;
+}
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-bottom-color: #6ec6e6; /* bleu clair */
+}
+.field label {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+}
+/* Le label devient bleu quand le champ est actif, comme "Area of interest" */
+.field:focus-within label {
+  color: #6ec6e6;
+}
+.btn-signup {
+  background: #a8d8ea;
+  color: #fff;
+  border: none;
+  border-radius: 999px; /* pilule */
+  padding: 12px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(168, 216, 234, 0.5);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-section {
+    order: -1; /* ou display: none si tu préfères masquer l'image sur mobile */
+  }
+}
